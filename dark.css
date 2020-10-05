@@ -1,0 +1,261 @@
+/*grey-light: #31343e*/
+/*grey-dark: #23262d*/
+/*grey-thedarktstxD: #18191c*/
+
+body {
+    background: #18191c;
+}
+
+input, textarea, select {
+    background: #18191c;
+    border: none;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.pun, .pun INPUT, .pun SELECT, .pun TEXTAREA, .pun OPTGROUP {
+    font-family: 'Open Sans', sans-serif;
+    color: #ccc;
+}
+
+.pun {
+    font-size: 14px;
+}
+
+.pun H2, #brdmenu {
+    background-color: #31343e;
+    color: #fff;
+    background-image:none;
+    padding: 1rem;
+    margin-bottom: 0;
+}
+
+DIV.box, .pun BLOCKQUOTE, DIV.codebox, #adminconsole FIELDSET TH, .rowodd, .roweven {
+    background-color: #23262d;
+}
+
+DIV.box, .pun TD, .pun TH, .pun BLOCKQUOTE, DIV.codebox, DIV.forminfo, DIV.blockpost LABEL {
+    BORDER-STYLE: solid;
+    BORDER-WIDTH: 0;
+}
+
+DIV.box {
+    padding: 1rem;
+}
+
+.pun TH {
+    BACKGROUND-COLOR: #23262d;
+    background-image:none;
+}
+
+TD.tcmod, #postpreview, #viewprofile DD, DIV.forminfo,
+#adminconsole FIELDSET TD, DIV.blockmenu DIV.box, #adstats DD {
+    BACKGROUND-COLOR: #31343e
+}
+
+TD.tc2, TD.tc3 {
+    BACKGROUND-COLOR: #23262d;
+}
+
+DIV.postright {BACKGROUND: none; border-color: #31343e; padding: 1rem;}
+DIV.blockpost DIV.box {BACKGROUND-COLOR: #23262d; border-color: #31343e}
+DIV.postleft, DIV.postfootleft, DIV.blockpost LABEL {BACKGROUND-COLOR: #31343e}
+DIV.postfootleft {
+    padding-bottom: 0.5rem;
+}
+DIV.postfootright {
+    background: none;
+}
+
+#brdheader > div:nth-child(1) {
+    padding: 0;
+}
+
+.pun TH, .pun TD {
+    PADDING: 8px 0;
+}
+
+DIV.postleft {
+    font-size: 14px;
+}
+
+.blockpost .box {
+    padding: 0;
+}
+
+DIV.blockpost H2 SPAN.conr {
+    COLOR: #eee;
+}
+
+#brdwelcome {
+    PADDING: 0.5rem 1rem;
+}
+
+#brdwelcome ul.conr > li:nth-child(2) > a:nth-child(1),
+#brdwelcome ul.conr > li:nth-child(1) > a:nth-child(1) {
+    font-size: 0;
+}
+
+#brdwelcome ul.conr > li:nth-child(1) > a:nth-child(1):after {
+    background:#09c;
+    color: #fff;
+}
+
+#brdwelcome ul.conr > li:nth-child(2) > a:nth-child(1):after {
+    background: #00678b;
+    color: #fff;
+}
+
+#brdwelcome ul.conr > li:nth-child(1) > a:nth-child(1):after,
+#brdwelcome ul.conr > li:nth-child(2) > a:nth-child(1):after {
+    font-size: 14px;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+}
+
+input[type=submit] {
+    padding: 0.5rem 1rem;
+    color: #fff;
+    background:#09c;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+DIV.postfootright {
+    font-size: 0;
+}
+
+DIV.postfootright > ul {
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+}
+
+DIV.postfootright > ul > li > a {
+    margin: 0 0.5rem;
+    font-size: 14px;
+}
+
+DIV>FIELDSET {
+    BORDER-WIDTH: 0;
+}
+
+DIV.blockform FORM, DIV.fakeform {
+    PADDING: 0
+}
+
+#punviewtopic .inform > fieldset:nth-child(1) > legend:nth-child(1) {
+    display: none;
+}
+
+.pun FIELDSET {
+    PADDING: 0;
+}
+
+DIV.infldset {
+    PADDING: 0;
+}
+
+DIV.blockform P INPUT {MARGIN: 0}
+
+.pun p.postlink, #conr {
+    padding: 0.5rem 1rem;
+    color: #fff;
+    box-sizing: border-box;
+    background: #09c none;
+    top: 0;
+    left: 0;
+    width: auto;
+    font-weight: normal;
+}
+
+DIV.linksb, DIV.linkst, DIV.postlinksb {
+    background: #23262d;
+    background-image: url(http://104.248.131.70:369/announcebg.png);
+
+    background-repeat: no-repeat;
+
+    background-size: cover;
+
+    background-position: center center;
+}
+
+@media (max-width: 991px) {
+    DIV.linkst UL,
+    DIV.postlinksb UL {
+        MARGIN-LEFT: 0;
+        margin-top: 20px;
+        clear: both;
+    }
+
+    DIV.postlinksb UL {
+        padding: 1rem 0;
+    }
+
+    DIV.linkst UL {
+        padding: 1rem 0 0;
+    }
+}
+
+.pun p.postlink a {
+    color: #fff !important;
+}
+
+#punwrap {
+    width: auto;
+    /*max-width: 1200px;*/
+}
+
+#brdwelcome ul.conr > li:nth-child(2) {
+    display: none;
+}
+
+#punsearch #brdwelcome ul.conr > li:nth-child(2) {
+    display: block;
+}
+
+DIV.postleft, DIV.postfootleft {
+    WIDTH: 13rem;
+}
+
+DIV.linkst .conl, DIV.linksb .conl, DIV.postlinksb .conl {
+    WIDTH: 13em;
+}
+
+.linkst UL, linksb UL, .postlinksb UL {
+    MARGIN-LEFT: 13em;
+}
+
+DIV.postright, DIV.postfootright {
+    BORDER-LEFT-WIDTH: 13rem;
+    border-left-color: #31343e !important;
+}
+
+DIV.incqbox {
+    background: #18191c;
+    padding: 1rem;
+    border: 1px solid #31343e;
+    width: auto;
+}
+.pun BLOCKQUOTE {
+    padding: 0;
+    border: 2px solid #09c;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0 0 0.5rem;
+}
+
+.pun .tcl {
+    width: 100%;
+}
+
+.blockpost > h2 > span > a {
+    color: #09c !important;
+}
+
+#punviewtopic .blockpost .inbox {
+    background: url(http://104.248.131.70:369/postbg.png) no-repeat;
+    /*background: url(http://imladis.local/postbg.png) no-repeat;*/
+    background-position-x: right;
+    background-position-y: bottom;
+    background-size: 20rem;
+}

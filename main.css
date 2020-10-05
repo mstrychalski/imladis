@@ -1,0 +1,786 @@
+#brdwelcome .conl li:last-child,
+[color="#9803A6"] {
+    color: #a8a8a8;
+}
+
+/* <img> w headerze, logo. */
+#brdtitle > a:nth-child(1) > img:nth-child(1) {
+    width: 100%;
+}
+
+#brdtitle {
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+}
+
+#brdtitle > p {
+    display: none;
+}
+
+
+/* Edytor w temacie, na dole */
+.infldset.txtarea {
+    width: 100%;
+}
+
+[name="form[announcement_message]"] {
+    width: 100%;
+    height: 1000px;
+}
+
+.postavatar img {
+    max-width: 100%;
+    height: auto;
+}
+
+DIV.postleft DL {
+    padding: 1rem;
+}
+
+#punviewtopic .blockform > div:nth-child(2) > form:nth-child(1) > li:nth-child(5),
+#punviewtopic .blockform > div:nth-child(2) > form:nth-child(1) > li:nth-child(6),
+#punviewtopic .blockform > div:nth-child(2) > form:nth-child(1) > br:nth-child(3),
+#punviewtopic .blockform > div:nth-child(2) > form:nth-child(1) > br:nth-child(4){
+    display: none;
+}
+
+#punviewtopic .blockpost {
+    position: relative;
+    font-size: 16px;
+}
+
+#punviewtopic .blockpost > h2 {
+    position: absolute;
+    left: 13rem;
+    top: 100%;
+    margin-top: -48px;
+    height: 30px;
+    min-width: 250px;
+    background: none;
+    display: block;
+    padding: 1rem;
+    line-height: 16px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+#punviewtopic .blockpost > h2 > span > .conr {
+    float: none;
+    margin-right: 0.5rem;
+    opacity: 0.5;
+}
+
+.rocket-chat-iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.rocket-chat-container {
+    height: 430px;
+    overflow: hidden;
+}
+
+.rocket-chat-container.fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    resize: none;
+}
+
+.rocket-chat-container.fullscreen .rocket-chat-iframe {
+    height: 100%;
+}
+
+#punsearch .inew .tclcon {
+    font-size: 0;
+}
+
+#punindex TD.tcr SPAN.byuser {
+    DISPLAY: inline-block;
+}
+
+.blocktable .tcr > a {
+    vertical-align: middle;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+#punsearch .tclcon a:first-child,
+#punsearch .inew .tclcon strong,
+.blocktable tr .intd .tclcon,
+#punindex .blocktable tr .intd .tclcon {
+    font-size: 14px;
+}
+
+div.pun table td,
+div.pun table th {
+    padding: 10px 20px;
+}
+
+.blocktable table .tcr {
+    padding-left: 0;
+}
+
+.blocktable table .tcl {
+    padding-right: 1rem !important;
+}
+
+@media (max-width: 991px) {
+    div.pun table td,
+    div.pun table th {
+        padding: 8px 15px;
+    }
+    
+    #punsearch .tclcon a:first-child,
+    #punsearch .inew .tclcon strong,
+    .blocktable tr .intd .tclcon,
+    #punindex .blocktable tr .intd .tclcon {
+        font-size: 12px;
+    }
+    
+    .blocktable .tcr > a {
+        float: none;
+    }
+    
+    .blocktable TD.tcr SPAN.byuser {
+        display: block !important;
+    }
+    
+    #brdmenu {
+        width: 100%;
+    }
+
+    #punwrap {
+        width: auto;
+        background: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    #brdfooter {
+        width: 100%;
+        padding: 0;
+        left: 0;
+        margin: 0;
+    }
+
+    .pun {
+        padding: 5px;
+        font-size: 14px;
+    }
+
+    .postleft {
+        float: none !important;
+        width: auto !important;
+        position: relative !important;
+        padding-left: 46px !important;
+    }
+
+    .postleft DT {
+        font-size: 1.2em;
+    }
+
+    .postleft dd {
+        display: none;
+    }
+
+    .postleft dd.postavatar,
+    .postleft dd.usertitle {
+        display: block;
+    }
+
+    DIV.postleft DL {
+        padding: 0.5rem 1rem 0.5rem 0.5rem;
+    }
+
+    DIV.blockpost {
+        position: relative;
+        MARGIN-BOTTOM: 0.5rem;
+    }
+
+    DIV.blockpost H2 {
+        width: auto;
+        left: 0 !important;
+        padding: 0;
+        position: absolute;
+        height: 20px;
+        z-index: 1;
+        font-size: 14px;
+    }
+
+    DIV.postfootleft,
+    DIV.postfootright {
+        display: none;
+    }
+
+    .postright {
+        border: none !important;
+    }
+
+    .postfootleft {
+        width: 5em !important;
+    }
+
+    .postfootright {
+        font-size: 16px;
+        border: none !important;
+    }
+
+    .postavatar img {
+        max-width: 30px;
+        max-height: 30px;
+        margin-right: 10px;
+    }
+
+    .postavatar {
+        position: absolute;
+        left: 1rem;
+        top: 0.7rem;
+        margin: 0 !important;
+    }
+
+    .postsignature {
+        opacity: 0.5;
+    }
+
+    /* PW, profil */
+    #punprofile .blockmenu,
+    #punmessage_list .blockmenu {
+        float: none !important;
+        width: 100% !important;
+        margin-bottom: 10px;
+    }
+
+    #punmessage_list .blockpost {
+        padding-left: 0 !important;
+    }
+
+    #punprofile .blockform,
+    #punmessage_list .blocktable {
+        margin-left: 0 !important;
+    }
+
+    #punmessage_list .linkst ul{
+        clear: both;
+        margin: 0;
+    }
+
+    #punmessage_list .pagelink.conl {
+        width: 10em;
+    }
+
+    #punmessage_list .postlink.conr {
+        margin-bottom: 10px;
+    }
+
+    /* Index, kolumny z numerami post?w */
+    #punviewforum .tc2,
+    #punviewforum .tc3,
+    #punindex .tc2,
+    #punindex .tc3 {
+        display: none;
+    }
+
+    #punviewtopic .blockform .inform {
+        display: inline-block;
+        width: 100%;
+        padding: 0;
+        margin: 0 1rem 0 0;
+    }
+
+    #punviewtopic .blockform.fixed {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        margin: 0;
+        width: 100%;
+        z-index: 4;
+        box-shadow: 0 0 15px rgba(0,0,0,0.5);
+
+        -webkit-animation: fadein 0.5s;
+        -moz-animation: fadein 0.5s;
+        -o-animation: fadein 0.5s;
+        animation: fadein 0.5s;
+    }
+
+    #punviewtopic .blockform.fixed > .box {
+        padding: 0.4rem 0.5rem;
+    }
+
+    #punviewtopic .blockform.fixed textarea {
+        height: 35px;
+    }
+
+    #punviewtopic .blockform.fixed > h2 {
+        display: none;
+    }
+
+    #punviewtopic .blockform > .box * {
+        vertical-align: bottom;
+    }
+
+    #punviewtopic .blockpost .inbox {
+        padding-bottom: 2rem;
+    }
+
+    #punsearch .tc2,
+    #punsearch .tc3,
+    #punsearch .newtext {
+        display: none;
+    }
+
+    #punsearch .tcr {
+        white-space: nowrap;
+    }
+    
+    #punsearch thead {
+        display: none;
+    }
+
+    #punsearch .tcr a {
+        display: block;
+    }
+
+    .subscribelink {
+        padding-top: 1rem !important;
+    }
+
+    *[id^='okpop_'] {
+        z-index: -9999 !important;
+        opacity: 0;
+    }
+
+    #punindex > center:last-of-type {
+        display: none;
+    }
+
+    .rocket-chat-iframe {
+        width: 100%;
+        height: 540px;
+        margin-bottom: 8px
+    }
+
+    .rocket-chat-container {
+        height: 540px;
+    }
+
+    .postmsg img {
+        max-width: 100% !important;
+    }
+}
+
+.background-o0 {
+    z-index: -9999 !important;
+    opacity: 0;
+}
+
+#announce > h2 {
+    display: none;
+}
+
+#announce > h2 {
+    display: none;
+}
+
+.announcement {
+    text-align: center;
+}
+
+.announcement .title h2 {
+    font-size: 25px;
+    background: none;
+    padding: 0;
+    color:#09c;
+    font-weight: bold;
+}
+
+.announcement .title p {
+    color: #83ce37;
+}
+
+.announcement .quote {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 21px;
+}
+
+@media (max-width: 991px) {
+    .announcement .title h2 {
+        font-size: 18px;
+    }
+
+    .announcement .title p {
+        font-size: 16px;
+    }
+
+    .announcement .quote {
+        font-size: 18px;
+    }
+}
+
+#announce .box {
+    background-image: url(http://104.248.131.70:369/announcebg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+/*shoutbox*/
+#dsadas > div:nth-child(1) > input:nth-child(5) {
+    max-width: 100%;
+}
+
+.bblinks {
+    display: none;
+}
+
+#brdheader .box {
+    position: relative;
+}
+
+#brdmenu {
+    position: absolute;
+    top: 100%;
+    padding: 0 !important;
+    background: #23262d !important;
+}
+
+#brdmenu ul li {
+    display: block;
+    height: auto;
+    margin: 0;
+}
+
+#brdmenu ul li a {
+    display: block;
+    padding: 1rem 1.5rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#brdmenu ul li a:hover {
+    background: #31343e;
+}
+
+#brdwelcome .fa-bars {
+    margin-top: 1rem;
+    font-size: 20px;
+    margin-right: 1rem;
+    cursor: pointer;
+    
+    display: inline-block;
+    float: none;
+    vertical-align: middle;
+    margin: 0;
+    margin-right: 0.5rem;
+}
+
+#brdwelcome .conl {
+    float: none;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#brdwelcome .conr {
+    width: auto;
+}
+
+#brdheader #brdmenu {
+    display: none;
+    border-bottom: 2px solid #09c;
+    z-index: 3;
+}
+
+#brdwelcome ul.conr > li:nth-child(1) > a:nth-child(1):after {
+    content: "Nowe posty";
+}
+
+#brdwelcome ul.conr > li:nth-child(2) > a:nth-child(1):after {
+    content: "Wyczy¶æ posty";
+    margin-top: 0.5rem;
+}
+
+.linkst > .inbox > .pagelink,
+.linkst > .inbox > .postlink {
+    display: none;
+}
+
+.linkst > .inbox > ul {
+    padding: 0;
+    margin: 0;
+}
+
+.postlinksb > .inbox > ul {
+    display: none;
+}
+
+DIV.linksb, DIV.linkst, DIV.postlinksb {
+    margin:  0.5rem 0;
+    padding: 1rem;
+}
+
+DIV.postlinksb {
+    margin-top: 1rem;
+}
+
+form#qjump {
+    display: none;
+}
+
+#punsearch .linkst,
+#announce {
+    display: none;
+}
+
+#punindex #announce {
+    display: block;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.postfootleft > p {
+    padding-left: 1rem !important;
+}
+
+.blockform .emoji-container {
+    display: none;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin-top: 0.5rem;
+}
+
+.blockform.fixed .emoji-container {
+    max-height: 190px;
+}
+
+.blockform .emoji img {
+    border: none;
+    height: 35px;
+    min-width: 35px;
+    background: #31343e;
+    padding: 0.25rem;
+    box-sizing: border-box;
+    margin: 0.1rem;
+}
+
+.btn-icon {
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    color: #fff !important;
+}
+
+#punviewtopic .blockform textarea {
+    height: 300px;
+    resize: none;
+    transition: height .2s;
+    padding: 0.5rem;
+    font-size: 16px;
+}
+
+.embed-mock {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    max-width: 640px;
+}
+
+.embed-mock img {
+    max-width: 100%;
+}
+
+.embed-mock .fa {
+    position: absolute;
+    font-size: 48px;
+    left: 50%;
+    margin-left: -24px;
+    top: 50%;
+    margin-top: -24px;
+}
+
+.rocket-chat-container.fixed {
+    left: 0;
+    top: 0;
+}
+
+@media (min-width: 992px) {
+    .mobile-only {
+        display: none !important;
+    }
+
+    #box_latest .tcr {
+        width: 249.183px;
+    }
+    
+    #punwrap {
+        padding: 0 10px;
+    }
+}
+
+.clickable-background {
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.2);
+}
+.blocktable table tr:nth-child(2n+1) .tc2,
+.blocktable table tr:nth-child(2n+1) .tc3,
+.blocktable table tr:nth-child(2n+1)  {
+    background: #212329;
+}
+
+.blocktable .box {
+    padding: 0;
+}
+
+#punindex table thead .tc2,
+#punindex table thead .tc3 {
+    background: #23262d !important;
+}
+
+#punindex .blocktable > h2 {
+    background: none;
+    font-size: 16px;
+    font-style: italic;
+    margin-top: 20px;
+    color: #ccc;
+    padding-left: 0;
+}
+
+#punindex .blocktable .tcr {
+    text-align: right;
+}
+
+.rocket-chat-container {
+    background: #23262d;
+}
+
+/*#punindex #announce::after {
+    content: "";
+    display: block;
+    height: 552px;
+    background: #23262d;
+    margin-top: 12px;
+}*/
+
+@media (min-width: 992px) {
+    #punindex #announce::after {
+        height: 442px;
+    }
+}
+
+
+#punindex #announce.rocket-chat-initialized::after {
+    display: none;
+}
+
+.o-hidden {
+    overflow: hidden !important;
+}
+
+.blocktable tr:not(.inew) .tclcon a {
+    font-weight: normal;
+}
+
+.blocktable .icon {
+    display: none;
+}
+
+.blocktable .tclcon {
+    margin-left: 0;
+}
+
+#punindex .blocktable tbody .tc2,
+#punindex .blocktable tbody .tc3 {
+    font-size: 12px;
+}
+
+#punindex .blocktable tbody .tc2:before {
+    content: "W¡TKI";
+}
+
+#punindex .blocktable tbody .tc3:before {
+    content: "POSTY";
+}
+
+#punindex .blocktable tbody .tc2:before,
+#punindex .blocktable tbody .tc3:before {
+    vertical-align: top;
+    color: #a8a8a8;
+    display: block;
+}
+
+#punindex .blocktable thead {
+    display: none;
+}
+
+.blocktable .tcr {
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+tbody .tcr::before {
+    vertical-align: top;
+    color: #a8a8a8;
+    display: block;
+    content: 'OSTATNI POST';
+}
+
+#punindex .blocktable:not(#idxsubscribed) tr .tclcon > :not(h3),
+#punindex .blocktable tr .intd > :not(.tclcon) {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+#punindex .blocktable tr .intd {
+    font-size: 0;
+}
+
+.blocktable .tcr {
+    text-align: right;
+}
+
+#punsearch .intd .byuser {
+    display: none;
+}
+
+#idxsubscribed .tclcon {
+    font-size: 0 !important;
+}
+
+#idxsubscribed .tclcon a:first-child,
+#idxsubscribed .inew .tclcon strong {
+    font-size: 14px !important;
+}
+
+.pun .tcl {
+    width: auto !important;
+}
+
+.chat-icon {
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50px; 
+    background: #09c;
+    color: #fff;
+    position: fixed; 
+    right: 1.5rem; 
+    bottom: 1.5rem;
+    text-align: center;
+    font-size: 20px;
+}
+
+.chat-icon .fa {
+    margin-top: 14px;
+}
