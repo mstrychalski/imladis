@@ -1062,17 +1062,17 @@ function initImladis() {
     setupAjax();
     handleIframeLinks();
 
-    if(!isMobile()) {
-        $('#announce').addClass('rocket-chat-initialized');
-
-        if (!isIframe) {
-            canContinue = false;
-        }
-
-        embedRocketChatFixed();
-    } else {
-        onPunClass('punindex', appendChatIcon);
-    }
+    // if(!isMobile()) {
+    //     $('#announce').addClass('rocket-chat-initialized');
+    //
+    //     if (!isIframe) {
+    //         canContinue = false;
+    //     }
+    //
+    //     embedRocketChatFixed();
+    // } else {
+    //     onPunClass('punindex', appendChatIcon);
+    // }
 
     if(!canContinue) {
         showPage();
