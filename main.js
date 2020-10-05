@@ -1060,7 +1060,7 @@ function initImladis() {
 
     username = $("a[href*='../profile.php']").html();
     setupAjax();
-    handleIframeLinks();
+    // handleIframeLinks();
 
     // if(!isMobile()) {
     //     $('#announce').addClass('rocket-chat-initialized');

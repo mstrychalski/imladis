@@ -201,8 +201,8 @@ DIV.linksb, DIV.linkst, DIV.postlinksb {
 }
 
 #punwrap {
-    width: auto;
-    /*max-width: 1200px;*/
+    /*width: auto;*/
+    max-width: 1200px;
 }
 
 #brdwelcome ul.conr > li:nth-child(2) {
