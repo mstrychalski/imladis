@@ -1,4 +1,4 @@
-var apiUrl = 'http://104.248.131.70:3001';
+var apiUrl = 'https://imladis-chat-api.herokuapp.com/';
 var username = '';
 var isIframe = self !== top;
 
