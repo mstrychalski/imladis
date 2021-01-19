@@ -19,6 +19,10 @@ function mockFromHtml(html, actualElement) {
     return mock;
 }
 
+function getSoundCloudPlayer(soundCloudUrl) {
+    return '<p><iframe style="width: 100%; max-width: 640px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url='+soundCloudUrl+'&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe></p>';
+}
+
 function getYoutubePlayer(youtubeHash) {
     return '<p>' +
         '<iframe style="max-width: 100%;" width="640" height="360" src="https://www.youtube.com/embed/'+youtubeHash+'" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>' +
@@ -86,6 +90,15 @@ function parseYoutubeLinks(el, url) {
 
     regexpMatches(url, regexp, function(link, hash) {
         var player = getYoutubePlayerMock(hash, el);
+        embedElement(player, el);
+    });
+}
+
+function parseSoundCloudLinks(el, url) {
+    var regexp = '(http(?:s?):\\/\\/(?:www\\.)?soundcloud\\.com(.*))';
+
+    regexpMatches(url, regexp, function(link, url) {
+        var player = getSoundCloudPlayer(url);
         embedElement(player, el);
     });
 }
@@ -178,9 +191,10 @@ function parseImladisPostLinks(el, url) {
 function regexpMatches(string, regexprule, callback) {
     var regexp = new RegExp(regexprule,'g');
     var match = regexp.exec(string);
-    regexp.lastIndex = 0;
 
-    if (match && match.length > 2 && match[0] && match[1] && match[2]) {
+    regexp.lastIndex = 0;
+    if (match && match.length >= 2 && match[0] && match[1] && match[2]) {
+
         callback(match[1], match[2]);
     }
 }
@@ -190,6 +204,7 @@ function parseAll(el, url) {
 
     parseYoutubeLinks(el, url);
     parseSpotifyLinks(el, url);
+    parseSoundCloudLinks(el, url);
     parseDropBoxLinks(el, url);
     parseVimeoLinks(el, url);
     parseImageLinks(el, url);
