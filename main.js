@@ -1,4 +1,4 @@
-var apiUrl = 'https://imladis-chat-api.herokuapp.com';
+var apiUrl = 'https://aurora-image-upload-module.herokuapp.com/v1/aurora-image-upload';
 var username = '';
 var isIframe = self !== top;
 
@@ -681,7 +681,7 @@ function toggleAds() {
 }
 
 function uploadImageAndGetUrl(postData, callback) {
-    $.post(apiUrl + '/upload-image', postData, callback).fail((e) => {
+    $.post(apiUrl + '/upload', postData, callback).fail((e) => {
         callback({url: ''});
     });
 }
