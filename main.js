@@ -955,6 +955,13 @@ function fixDatesForEl(el, humanOnly, attachTime) {
     var matches = string.match(re) || [];
     var timestamp = '';
 
+    //today time can be found on admin_options, under time format form field
+    //04:58 -> 00:17
+    var start = moment('2020-02-02 04:58');
+    var end = moment('2020-02-02 00:17');
+    var duration = moment.duration(end.diff(start));
+    var minutesToAdd = duration.asMinutes();
+
     matches.forEach((text) => {
         var isToday = text.indexOf('Dzisiaj') !== -1;
         var isYestarday = text.indexOf('Wczoraj') !== -1;
@@ -980,10 +987,8 @@ function fixDatesForEl(el, humanOnly, attachTime) {
         }
 
         var postDate = moment(date);
-        //fixing wrong timezone
-        //01:04:03 -> 20:18
-        postDate.add(19, 'hours');
-        postDate.add(14, 'minutes');
+
+        postDate.add(minutesToAdd, 'minutes');
 
         var postDateString = postDate.format('YYYY-MM-DD HH:mm:ss');
 

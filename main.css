@@ -501,7 +501,7 @@ div.pun table th {
 }
 
 #brdwelcome ul.conr > li:nth-child(2) > a:nth-child(1):after {
-    content: "Wyczy�� posty";
+    content: "Wyczyść posty";
     margin-top: 0.5rem;
 }
 
@@ -706,7 +706,7 @@ form#qjump {
 }
 
 #punindex .blocktable tbody .tc2:before {
-    content: "W�TKI";
+    content: "WĄTKI";
 }
 
 #punindex .blocktable tbody .tc3:before {
